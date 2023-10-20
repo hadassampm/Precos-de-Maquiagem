@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+header {
+    background-color: #d93672;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+}
+
+.carregandoresultados{
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+}
+
+h1{
+   font-family: 'Dancing Script', cursive;
+   font-size: xx-large;
+}
+
+/* Estilos para o container de pesquisa */
+#search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #d93672;
+    color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+}
+
+/* Estilos para os resultados */
+#results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Isso distribuirá os elementos igualmente em três colunas */
+    margin: 0 -10px;
+}
+
+.product {
+    flex: 0 0 calc(33.33% - 20px); /* Define a largura das colunas */
+    margin: 10px; /* Adiciona um espaçamento entre os elementos */
+    text-align: center; /* Alinha o conteúdo no centro das colunas */
+    justify-content: space-between; /* Isso distribuirá os elementos igualmente em três colunas */
+}
+
+.product img {
+    max-width: 100%; /* Ajusta a largura máxima para 100% do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+@media screen and (max-width: 768px) {
+    #search-input {
+        max-width: 50%; /* Ocupar a largura total em telas menores */
+    }
+
+    .product {
+        flex: 0 0 calc(50% - 20px); 
+    }
+}
